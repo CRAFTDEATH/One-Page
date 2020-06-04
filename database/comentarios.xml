@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Tempo de geração: 07-Ago-2019 às 00:16
+- Versão do servidor: 10.3.16-MariaDB
+- versão do PHP: 7.3.7
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="comentarios" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="posts">
+                CREATE TABLE `posts` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `nome` varchar(64) NOT NULL,
+                  `email` varchar(200) NOT NULL,
+                  `mensagem` varchar(500) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'comentarios'
+    -->
+    <database name="comentarios">
+        <!-- Tabela posts -->
+    </database>
+</pma_xml_export>
